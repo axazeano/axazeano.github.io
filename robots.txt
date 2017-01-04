@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://axazeano.github.io/sitemap.xml 
