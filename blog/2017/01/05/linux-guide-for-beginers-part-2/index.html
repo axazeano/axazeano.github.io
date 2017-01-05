@@ -1,26 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Не блог]]></title>
-  <link href="http://axazeano.github.io/atom.xml" rel="self"/>
-  <link href="http://axazeano.github.io/"/>
-  <updated>2017-01-05T21:05:18+03:00</updated>
-  <id>http://axazeano.github.io/</id>
-  <author>
-    <name><![CDATA[axazeano]]></name>
-    
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Гайд по Linux для начинающих. Часть 2 - Не блог</title>
+  <meta name="author" content="axazeano">
 
   
-  <entry>
-    <title type="html"><![CDATA[Гайд по Linux для начинающих. Часть 2]]></title>
-    <link href="http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-2/"/>
-    <updated>2017-01-05T01:13:42+03:00</updated>
-    <id>http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-2</id>
-    <content type="html"><![CDATA[<h3>Просмотр текстовых файлов</h3>
+  <meta name="description" content="Просмотр текстовых файлов Существует несколько утилит для просмотра текстовых файлов в консоли, такие как cat, less, и немного специфичные head, tail &hellip;">
+  
 
-<p><img src="http://axazeano.github.io/images/user_images/read_files.png"></p>
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-2/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Не блог" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Не блог</a></h1>
+  
+    <h2>Some intresting things.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="axazeano.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Гайд по Linux для начинающих. Часть 2</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2017-01-05T01:13:42+03:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>1:13 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3>Просмотр текстовых файлов</h3>
+
+<p><img src="/images/user_images/read_files.png"></p>
 
 <p>Существует несколько утилит для просмотра текстовых файлов в консоли, такие как <code>cat</code>, <code>less</code>, и немного специфичные <code>head</code>, <code>tail</code>. Давай посмотрим на них подробнее:</p>
 
@@ -30,7 +95,7 @@
 
 <p><code>less my_text_document</code></p>
 
-<p><img src="http://axazeano.github.io/images/user_images/less_example.png"></p>
+<p><img src="/images/user_images/less_example.png"></p>
 
 <p>Документ отобразится на экране, его можно листать вверх/вниз/влево/вправо, искать слова.
 Утилита <code>less</code> позаимствовала команды у своей предшедственницы, утилиты <code>more</code>, которая выполняла схожие функции, но по сравнению с <code>less</code> имеет некоторые недостатки. Также, часть команд <code>less</code> взяла из утилиты <code>vi</code>, которая является очень продвинутым текстовым редактором.</p>
@@ -47,7 +112,7 @@
 <p>Для перехода к следующему совпадению нажмите на &lsquo;n&rsquo;, к предыдущему - <code>N</code>
 (т.е. <code>shift</code> + <code>n</code>).</p>
 
-<blockquote><p><img src="http://axazeano.github.io/images/user_images/less_search.png">
+<blockquote><p><img src="/images/user_images/less_search.png">
 пример поиска фразы <code>bar</code></p></blockquote>
 
 <p>Чтобы перейти в самое начало документа используйте клавишу <code>g</code>, в конец документа -
@@ -55,7 +120,7 @@
 
 <h4><code>cat</code></h4>
 
-<p><img src="http://axazeano.github.io/images/user_images/how_cat_work.png"></p>
+<p><img src="/images/user_images/how_cat_work.png"></p>
 
 <p>Название этой утилиты не имеет ничего общего с котами и кошками и является сокращением от concatenate (конкатенация). При помощи этой утилиты можно конкатенировать файлы. Воу воу, что же такое <strong>конкатенация</strong>? Давайте обратимся к википедии:</p>
 
@@ -63,42 +128,42 @@
 
 <p>При конкатенации файлов текста из них будут просто объединяться, однако, как это поможет нам прочесть файл? Давайте глянем в документацию, а именно в <code>man cat</code>:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/man_cat.png"></p>
+<p><img src="/images/user_images/man_cat.png"></p>
 
 <p>Утилита <code>cat</code> не только конкатенирует файлы, но и печатает их на консоль, чем собственно мы и воспользуемся. Если мы передадим всего один файл в эту утилиту, то она просто напечатает его на экране (и впрямь, объединять его ведь не с чем):</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/cat_single_file.png"></p>
+<p><img src="/images/user_images/cat_single_file.png"></p>
 
-<p><img src="http://axazeano.github.io/images/user_images/cat_first_example.png">
+<p><img src="/images/user_images/cat_first_example.png">
 <br>
 Давай попробуем объединить два файла и вывести их на экран:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/cat_second_example.png"></p>
+<p><img src="/images/user_images/cat_second_example.png"></p>
 
 <hr>
 
 
 <h3><code>head</code></h3>
 
-<p><img src="http://axazeano.github.io/images/user_images/how_head_works.png"></p>
+<p><img src="/images/user_images/how_head_works.png"></p>
 
 <p>Эта утилита выводит несколько первых строк из файла. Просто и удобно. Зачем это нужно, скажете вы? Допустим, у нас есть файл, причем файл довольно объемный, мегабайт так на 50. При помощи <code>cat</code> его не просмотришь, он просто не влезет в консоль (да да, вывод в консоль ограничивается некоторым числом строк, число выставляется в настройках эмулятора терминала) и будет показан только его конец.</p>
 
 <blockquote><p>Настройка числа строк в iTerm 2. Есть опция неограниченного числа строк (unlimited srollback), но в нашем случае это не панацея
-<img src="http://axazeano.github.io/images/user_images/scrollback_lines.png"></p></blockquote>
+<img src="/images/user_images/scrollback_lines.png"></p></blockquote>
 
 <p>Давате попробуем <code>head</code> в деле. Для начала сделаем файл с несколькими строками:
-<img src="http://axazeano.github.io/images/user_images/create_multilines_file.png"></p>
+<img src="/images/user_images/create_multilines_file.png"></p>
 
 <p>Вначале объединим два наших файла и вывод утилиты <code>cat</code> направим в новый файл. Затем добавим новую строку при помощи команды <code>echo</code>.</p>
 
 <p>Проверим содержимое файла:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/check_multilines_file.png"></p>
+<p><img src="/images/user_images/check_multilines_file.png"></p>
 
 <p>Затем глянем в <code>man head</code>:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/man_head.png"></p>
+<p><img src="/images/user_images/man_head.png"></p>
 
 <hr>
 
@@ -153,7 +218,7 @@
 
 <p><code>If more than a single file is specified, each file is preceded by a header consisting of the string ``==&gt; XXX &lt;=='' where ``XXX'' is the name of the file.</code> - Если указанно более одного файла, каждый файл будет начинаться со строки вида <code>==&gt; XXX &lt;==</code>, где <code>XXX</code> - имя файла. Ну, сделанно это явно для удобства.</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/head_multifile.png"></p>
+<p><img src="/images/user_images/head_multifile.png"></p>
 
 <p><strong>EXIT STATUS</strong></p>
 
@@ -177,175 +242,110 @@
 
 <h3><code>tail</code></h3>
 
-<p><img src="http://axazeano.github.io/images/user_images/man_tail.png"></p>
+<p><img src="/images/user_images/man_tail.png"></p>
 
 <p>Задание домой: разобраться в работе <code>tail</code> самостоятельно, утилита схожа с <code>head</code></p>
-]]></content>
-  </entry>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <entry>
-    <title type="html"><![CDATA[Гайд по Linux для начинающих. Часть 1]]></title>
-    <link href="http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-1/"/>
-    <updated>2017-01-05T00:22:04+03:00</updated>
-    <id>http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-1</id>
-    <content type="html"><![CDATA[<p><img class="[linux logo]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/280px-Tux.svg.png" title="[width] [height] [linux logo [linux logo]]" ></p>
 
-<p>Напишу немного о Linux.</p>
+<span class="byline author vcard">Posted by <span class="fn">axazeano</span></span>
 
-<h3>Пути</h3>
+      
 
-<blockquote><p>Путь - коротко говоря то, где расположен файл.</p></blockquote>
 
-<p>Представим, что у нас есть папка <code>foo/</code>, в которой есть другая папка <code>bar/</code>, в которой расположен файл <code>baz/</code>. Тогда путь для файла <code>baz/</code> будет выглядеть как <code>foo/bar/baz/</code></p>
 
-<p>В системах UNIX/Linux все пути начинаются из корневого раздела - <code>/</code>. Это не просто черточка, это указатель на вполне определённый раздел жесткого диска.</p>
 
-<p>Пути бывают двух типов: абсолютные и относительные пути.
-В чем же разница?</p>
+<time class='entry-date' datetime='2017-01-05T01:13:42+03:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>1:13 am</span></time>
+      
 
-<p><strong>Абсолютный путь</strong> требует указания ПОЛНОГО перечня директорий до текущей директории. Например, нам нужна директория <code>log/</code>. Для того, чтобы получить доступ к этой директории, нам придётся записать полный её путь от корневого раздела: <code>/var/log</code>. Обрати внимание, что запись пути мы начали с <code>/</code> - корневого раздела, затем записали папку <code>var/</code>, в которой находится директорию <code>log/</code>.</p>
-
-<p><strong>Относительный путь</strong> более умный. Допустим, нам все также требуется получить доступ к файлу <code>log_file</code> в директории <code>/var/log/</code>, но сейчас мы находимся в директорию <code>var/</code>. Чтобы получить доступ к <code>log_file</code> нам достаточно указать путь <code>log/log_file</code>. Терминал знает то, в какой директорию ты сейчас находишься и достаточно указать путь, относительно текущей папки.</p>
-
-<!-- more -->
-
-
-<p>Домашня директорию <code>/home/&lt;текущий пользователь&gt;/</code> сокращается до <code>~/</code> . Допустим, ты сейчас залогинен под пользователем <code>Ilya</code> . Тогда, для тебя <code>~/</code> будет равносилен <code>/home/Ilya/</code></p>
-
-<p>Символ <code>.</code> - указывает на текущую директорию
-Например, мы находимся в папке <code>foo/bar</code> . для нас папка <code>.</code> будет <code>foo/bar/</code></p>
-
-<p>Символ <code>..</code> - указывает на директорию, находящуюся на уровень выше.
-Например, мы находимся в папке <code>foo/bar</code> . Для нас папка <code>..</code> будет <code>foo</code>.</p>
-
-<p>Подробней про пути смотри по этой <a href="https://losst.ru/put-k-fajlu-v-linux">ссылке</a></p>
-
-<hr>
-
-
-<h3>Навигация по файловой системе</h3>
-
-<p>Для перехода по папкам используется команда <code>cd</code> (change directory - смени директорию).
-Примеры использования:</p>
-
-<ul>
-<li>Перейти в корневой раздел: <code>cd /</code></li>
-<li>Перейти в домашнюю директорию: <code>cd ~/</code> или <code>cd /home/&lt;имя текущего пользователя&gt;/</code></li>
-<li>Перейти в директорию <code>foo/bar</code>: <code>cd foo/bar</code></li>
-<li>Перейти в директорию <code>foo/</code>, находясь в директорию <code>foo/bar/</code>: <code>cd ..</code></li>
-<li>Перейти в директорию <code>foo/baz/</code>, находясь в директорию <code>foo/bar/</code>: <code>cd ../baz</code></li>
-</ul>
-
-
-<p>Подробней по команде <code>cd</code> смотри по этой <a href="https://www.google.ru/search?client=ubuntu&amp;channel=fs&amp;q=linux+cd&amp;ie=utf-8&amp;oe=utf-8&amp;gfe_rd=cr&amp;ei=PEVYWLCKB4KG7gS4xrHoAQ">ссылке</a></p>
-
-<hr>
-
-
-<h3>Просмотр содержимого директорий</h3>
-
-<p>Для просмотра содержимого директорий служит команда <code>ls</code> (От английского list - список)
-Примеры использования:</p>
-
-<ul>
-<li>Просмотр содержимого текущей директории: <code>ls</code></li>
-<li>Просмотр содержимого директории <code>/var/log/</code>: <code>ls /var/log</code></li>
-<li>Просмотр содержимого директори <code>foo/baz/</code>, находясь в директории <code>foo/bar/</code>: <code>ls ../baz/</code></li>
-</ul>
-
-
-<p>Подробней по команде <code>ls</code> смотри по этой <a href="https://www.google.ru/search?client=ubuntu&amp;channel=fs&amp;q=linux+ls&amp;ie=utf-8&amp;oe=utf-8&amp;gfe_rd=cr&amp;ei=3ERYWPvaHoKG7gS4xrHoAQ">ссылке</a></p>
-
-<hr>
-
-
-<h3>Создание файлов в консоли</h3>
-
-<p>Один из способов создания файлов в консоли - использование команды <code>touch</code> (прикосновение с английского)
-Пример:
-* <code>touch my_file.txt</code> - создаст в текущей папке пустой файл с названием <code>my_file.txt</code>
-* <code>touch foo/another_file.txt</code> - создаст в папке <code>./foo</code> файл <code>another_file.txt</code></p>
-
-<p>Подробней по команде <code>touch</code> смотри по этой <a href="https://www.google.ru/search?client=ubuntu&amp;channel=fs&amp;q=linux+touch&amp;ie=utf-8&amp;oe=utf-8&amp;gfe_rd=cr&amp;ei=pkRYWLkpgobuBLjGsegB">ссылке</a></p>
-
-<hr>
-
-
-<h3>Создание директорий</h3>
-
-<p>Для создания директорий используется команда <code>mkdir</code> (make dir - сделай директорию)
-Примеры:</p>
-
-<ul>
-<li>создать папку <code>foo/</code>: <code>mkdir foo</code></li>
-<li>мы находимся в папке <code>foo/bar/</code>, создать папку <code>foo/baz</code>: <code>mkdir ../baz</code></li>
-</ul>
-
-
-<p>Если необходимо создать последовательность директорий, стоит использовать команду <code>mkdir</code> с ключем <code>-p</code>:
-- мы находимся в папке в папке <code>foo/</code>, нам нужно создать директорию <code>foo/bar/baz/</code>. Используя команду без ключа -p нам пришлось бы выполнить две команды:</p>
-
-<ol>
-<li><code>mkdir bar/</code> - создаём директорию <code>bar/</code></li>
-<li><code>mkdir bar/baz/</code> создаём директорию <code>baz/</code> в директории <code>bar/baz</code></li>
-</ol>
-
-
-<p>Используя ключ <code>-p</code> достаточно выполнить одну:
-<code>mkdir -p bar/baz</code></p>
-
-<p>Подробней по команде <code>mkdir</code> смотри по этой <a href="https://www.google.ru/search?client=ubuntu&amp;channel=fs&amp;q=nook+djvu&amp;ie=utf-8&amp;oe=utf-8&amp;gfe_rd=cr&amp;ei=FV1ZWOLmJKW8zAWD3ZmYBw#newwindow=1&amp;safe=off&amp;channel=fs&amp;q=linux+mkdir">ссылке</a></p>
-
-<hr>
-
-
-<h3>Команда Echo</h3>
-
-<p>Выводит в консоль (на самом деле в stdout, что это такое - читай ниже) переданный ей текст.
-<code>echo hello</code> выведет в консоль <code>hello</code></p>
-
-<p>Важно помнить, что есть мы хотим вывести больше одного слова, стоит использовать ковычки:
-<code>echo "hello world\!"</code> выведет в консоль <code>hello world\!</code></p>
-
-<p>(\ перед восклицательным знаком - так называемое экранирование)</p>
-
-<p>Более полные примеры смотри по этой <a href="https://www.google.ru/search?client=ubuntu&amp;channel=fs&amp;q=linux%20echo&amp;ie=utf-8&amp;oe=utf-8&amp;gfe_rd=cr&amp;ei=6j9YWOrzJpLHZLOMuaAE">ссылке</a></p>
-
-<hr>
-
-
-<h3>Стандартные потоки</h3>
-
-<blockquote><p>В средах UNIX/Linux существует такое понятие, как стандартные потоки</p></blockquote>
-
-<p>У каждой программы существует 3 потока данных:</p>
-
-<ul>
-<li><code>stdin</code></li>
-<li><code>stdout</code></li>
-<li><code>stderr</code></li>
-</ul>
-
-
-<p>Информацию о них можешь найти по этой <a href="https://habrahabr.ru/post/55136/">ссылке</a></p>
-
-<hr>
-
-
-<h3>Создание файлов (и наполнение их текстом) (Часть 2)</h3>
-
-<p>Теперь, прочев про потоки данных мы можем сделать следующее: перенаправить поток <code>stdout</code> команды <code>echo</code> в новый файл:
-<code>echo "hello" &gt; new_file.txt</code></p>
-
-<p>Открыв файл, мы увидим текст <code>hello</code>
-Чтобы добавить к тексту <code>word</code>, выполним команду <code>echo "word" &gt;&gt; new_file.txt</code>. После выполнения этой команды содержимое файла станет</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>hello
-</span><span class='line'>world</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
+<span class="categories">
   
-</feed>
+    <a class='category' href='/blog/categories/linux/'>linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-2/" data-via="" data-counturl="http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-2/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2017/01/05/linux-guide-for-beginers-part-1/" title="Previous Post: Гайд по Linux для начинающих. Часть 1">&laquo; Гайд по Linux для начинающих. Часть 1</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/01/05/linux-guide-for-beginers-part-2/">Гайд по Linux для начинающих. Часть 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/05/linux-guide-for-beginers-part-1/">Гайд по Linux для начинающих. Часть 1</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - axazeano -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

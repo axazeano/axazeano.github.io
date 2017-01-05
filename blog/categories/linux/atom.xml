@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Не блог]]></title>
-  <link href="http://axazeano.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Linux | Не блог]]></title>
+  <link href="http://axazeano.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://axazeano.github.io/"/>
   <updated>2017-01-05T21:05:18+03:00</updated>
   <id>http://axazeano.github.io/</id>
@@ -20,7 +20,7 @@
     <id>http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-2</id>
     <content type="html"><![CDATA[<h3>Просмотр текстовых файлов</h3>
 
-<p><img src="http://axazeano.github.io/images/user_images/read_files.png"></p>
+<p><img src="/images/user_images/read_files.png"></p>
 
 <p>Существует несколько утилит для просмотра текстовых файлов в консоли, такие как <code>cat</code>, <code>less</code>, и немного специфичные <code>head</code>, <code>tail</code>. Давай посмотрим на них подробнее:</p>
 
@@ -30,7 +30,7 @@
 
 <p><code>less my_text_document</code></p>
 
-<p><img src="http://axazeano.github.io/images/user_images/less_example.png"></p>
+<p><img src="/images/user_images/less_example.png"></p>
 
 <p>Документ отобразится на экране, его можно листать вверх/вниз/влево/вправо, искать слова.
 Утилита <code>less</code> позаимствовала команды у своей предшедственницы, утилиты <code>more</code>, которая выполняла схожие функции, но по сравнению с <code>less</code> имеет некоторые недостатки. Также, часть команд <code>less</code> взяла из утилиты <code>vi</code>, которая является очень продвинутым текстовым редактором.</p>
@@ -47,7 +47,7 @@
 <p>Для перехода к следующему совпадению нажмите на &lsquo;n&rsquo;, к предыдущему - <code>N</code>
 (т.е. <code>shift</code> + <code>n</code>).</p>
 
-<blockquote><p><img src="http://axazeano.github.io/images/user_images/less_search.png">
+<blockquote><p><img src="/images/user_images/less_search.png">
 пример поиска фразы <code>bar</code></p></blockquote>
 
 <p>Чтобы перейти в самое начало документа используйте клавишу <code>g</code>, в конец документа -
@@ -55,7 +55,7 @@
 
 <h4><code>cat</code></h4>
 
-<p><img src="http://axazeano.github.io/images/user_images/how_cat_work.png"></p>
+<p><img src="/images/user_images/how_cat_work.png"></p>
 
 <p>Название этой утилиты не имеет ничего общего с котами и кошками и является сокращением от concatenate (конкатенация). При помощи этой утилиты можно конкатенировать файлы. Воу воу, что же такое <strong>конкатенация</strong>? Давайте обратимся к википедии:</p>
 
@@ -63,42 +63,42 @@
 
 <p>При конкатенации файлов текста из них будут просто объединяться, однако, как это поможет нам прочесть файл? Давайте глянем в документацию, а именно в <code>man cat</code>:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/man_cat.png"></p>
+<p><img src="/images/user_images/man_cat.png"></p>
 
 <p>Утилита <code>cat</code> не только конкатенирует файлы, но и печатает их на консоль, чем собственно мы и воспользуемся. Если мы передадим всего один файл в эту утилиту, то она просто напечатает его на экране (и впрямь, объединять его ведь не с чем):</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/cat_single_file.png"></p>
+<p><img src="/images/user_images/cat_single_file.png"></p>
 
-<p><img src="http://axazeano.github.io/images/user_images/cat_first_example.png">
+<p><img src="/images/user_images/cat_first_example.png">
 <br>
 Давай попробуем объединить два файла и вывести их на экран:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/cat_second_example.png"></p>
+<p><img src="/images/user_images/cat_second_example.png"></p>
 
 <hr>
 
 
 <h3><code>head</code></h3>
 
-<p><img src="http://axazeano.github.io/images/user_images/how_head_works.png"></p>
+<p><img src="/images/user_images/how_head_works.png"></p>
 
 <p>Эта утилита выводит несколько первых строк из файла. Просто и удобно. Зачем это нужно, скажете вы? Допустим, у нас есть файл, причем файл довольно объемный, мегабайт так на 50. При помощи <code>cat</code> его не просмотришь, он просто не влезет в консоль (да да, вывод в консоль ограничивается некоторым числом строк, число выставляется в настройках эмулятора терминала) и будет показан только его конец.</p>
 
 <blockquote><p>Настройка числа строк в iTerm 2. Есть опция неограниченного числа строк (unlimited srollback), но в нашем случае это не панацея
-<img src="http://axazeano.github.io/images/user_images/scrollback_lines.png"></p></blockquote>
+<img src="/images/user_images/scrollback_lines.png"></p></blockquote>
 
 <p>Давате попробуем <code>head</code> в деле. Для начала сделаем файл с несколькими строками:
-<img src="http://axazeano.github.io/images/user_images/create_multilines_file.png"></p>
+<img src="/images/user_images/create_multilines_file.png"></p>
 
 <p>Вначале объединим два наших файла и вывод утилиты <code>cat</code> направим в новый файл. Затем добавим новую строку при помощи команды <code>echo</code>.</p>
 
 <p>Проверим содержимое файла:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/check_multilines_file.png"></p>
+<p><img src="/images/user_images/check_multilines_file.png"></p>
 
 <p>Затем глянем в <code>man head</code>:</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/man_head.png"></p>
+<p><img src="/images/user_images/man_head.png"></p>
 
 <hr>
 
@@ -153,7 +153,7 @@
 
 <p><code>If more than a single file is specified, each file is preceded by a header consisting of the string ``==&gt; XXX &lt;=='' where ``XXX'' is the name of the file.</code> - Если указанно более одного файла, каждый файл будет начинаться со строки вида <code>==&gt; XXX &lt;==</code>, где <code>XXX</code> - имя файла. Ну, сделанно это явно для удобства.</p>
 
-<p><img src="http://axazeano.github.io/images/user_images/head_multifile.png"></p>
+<p><img src="/images/user_images/head_multifile.png"></p>
 
 <p><strong>EXIT STATUS</strong></p>
 
@@ -177,7 +177,7 @@
 
 <h3><code>tail</code></h3>
 
-<p><img src="http://axazeano.github.io/images/user_images/man_tail.png"></p>
+<p><img src="/images/user_images/man_tail.png"></p>
 
 <p>Задание домой: разобраться в работе <code>tail</code> самостоятельно, утилита схожа с <code>head</code></p>
 ]]></content>
@@ -188,7 +188,7 @@
     <link href="http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-1/"/>
     <updated>2017-01-05T00:22:04+03:00</updated>
     <id>http://axazeano.github.io/blog/2017/01/05/linux-guide-for-beginers-part-1</id>
-    <content type="html"><![CDATA[<p><img class="[linux logo]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/280px-Tux.svg.png" title="[width] [height] [linux logo [linux logo]]" ></p>
+    <content type="html"><![CDATA[<p><img class="[linux logo] <a" src="href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/280px-Tux.svg.png">https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/280px-Tux.svg.png</a>" title="[width] [height] [linux logo [linux logo]]" ></p>
 
 <p>Напишу немного о Linux.</p>
 
@@ -338,13 +338,11 @@
 <code>echo "hello" &gt; new_file.txt</code></p>
 
 <p>Открыв файл, мы увидим текст <code>hello</code>
-Чтобы добавить к тексту <code>word</code>, выполним команду <code>echo "word" &gt;&gt; new_file.txt</code>. После выполнения этой команды содержимое файла станет</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>hello
-</span><span class='line'>world</span></code></pre></td></tr></table></div></figure>
-
+Чтобы добавить к тексту <code>word</code>, выполним команду <code>echo "word" &gt;&gt; new_file.txt</code>. После выполнения этой команды содержимое файла станет
+<code>
+hello
+world
+</code></p>
 ]]></content>
   </entry>
   

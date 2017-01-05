@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Linux Tutorials for Beginers. Part 1 - Не блог</title>
+  <meta name="author" content="axazeano">
+
+  
+  <meta name="description" content="Linux Tutorials for Beginers. Part 1 Jan 4th, 2017 10:46 pm ### :minibus: Пути
+> :memo: Путь - коротко говоря то, где расположен файл. Представим, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://axazeano.github.io/linux-tutorials-for-beginers-part-1">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Не блог" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Не блог</a></h1>
+  
+    <h2>Some intresting things.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="axazeano.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Linux Tutorials for Beginers. Part 1</h1>
+    <p class="meta">
+
+
+
+
+<time class='entry-date' datetime='2017-01-04T22:46:00+03:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>10:46 pm</span></time></p>
+  </header>
+  
+  ### :minibus: Пути
+> :memo: Путь - коротко говоря то, где расположен файл.
+
+Представим, что у нас есть папка `foo/`, в которой есть другая папка `bar/`, в которой расположен файл `baz/`. Тогда путь для файла `baz/` будет выглядеть как `foo/bar/baz/`
+
+В системах UNIX/Linux все пути начинаются из корневого раздела - `/`. Это не просто черточка, это указатель на вполне определённый раздел жесткого диска.
+
+Пути бывают двух типов: абсолютные и относительные пути.
+В чем же разница?
+
+**Абсолютный путь** требует указания ПОЛНОГО перечня директорий до текущей директории. Например, нам нужна директория `log/`. Для того, чтобы получить доступ к этой директории, нам придётся записать полный её путь от корневого раздела: `/var/log`. Обрати внимание, что запись пути мы начали с `/` - корневого раздела, затем записали папку `var/`, в которой находится директорию `log/`.
+ 
+**Относительный путь** более умный. Допустим, нам все также требуется получить доступ к файлу `log_file` в директории `/var/log/`, но сейчас мы находимся в директорию `var/`. Чтобы получить доступ к `log_file` нам достаточно указать путь `log/log_file`. Терминал знает то, в какой директорию ты сейчас находишься и достаточно указать путь, относительно текущей папки.
+
+Домашня директорию `/home/<текущий пользователь>/` сокращается до `~/` . Допустим, ты сейчас залогинен под пользователем `Ilya` . Тогда, для тебя `~/` будет равносилен `/home/Ilya/`
+
+Символ `.` - указывает на текущую директорию
+Например, мы находимся в папке `foo/bar` . для нас папка `.` будет `foo/bar/`
+
+Символ `..` - указывает на директорию, находящуюся на уровень выше.
+Например, мы находимся в папке `foo/bar` . Для нас папка `..` будет `foo`. 
+
+:book: Подробней про пути смотри по этой [ссылке](https://losst.ru/put-k-fajlu-v-linux)
+
+<hr>
+
+### :runner: Навигация по файловой системе
+
+Для перехода по папкам используется команда `cd` (change directory - смени директорию).
+Примеры использования:
+
+ - Перейти в корневой раздел: `cd /`
+ - Перейти в домашнюю директорию: `cd ~/` или `cd /home/<имя текущего
+   пользователя>/`
+ - Перейти в директорию `foo/bar`: `cd foo/bar`
+ - Перейти в директорию `foo/`, находясь в директорию `foo/bar/`: `cd ..`
+ - Перейти в директорию `foo/baz/`, находясь в директорию `foo/bar/`: `cd ../baz`
+
+:book: Подробней по команде `cd` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+cd&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=PEVYWLCKB4KG7gS4xrHoAQ)
+
+<hr>
+
+### :open_file_folder: Просмотр содержимого директорий
+
+Для просмотра содержимого директорий служит команда `ls` (От английского list - список)
+Примеры использования:
+
+ - Просмотр содержимого текущей директории: `ls`
+ - Просмотр содержимого директории `/var/log/`: `ls /var/log`
+ - Просмотр содержимого директори `foo/baz/`, находясь в директории `foo/bar/`: `ls ../baz/`
+
+:book: Подробней по команде `ls` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+ls&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=3ERYWPvaHoKG7gS4xrHoAQ)
+
+<hr>
+
+### :pencil2: Создание файлов в консоли
+
+Один из способов создания файлов в консоли - использование команды `touch` (прикосновение с английского)
+Пример:
+* `touch my_file.txt` - создаст в текущей папке пустой файл с названием `my_file.txt`
+* `touch foo/another_file.txt` - создаст в папке `./foo` файл `another_file.txt`
+
+:book: Подробней по команде `touch` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+touch&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=pkRYWLkpgobuBLjGsegB)
+
+<hr>
+
+### :file_folder: Создание директорий
+
+Для создания директорий используется команда `mkdir` (make dir - сделай директорию)
+Примеры:
+
+- создать папку `foo/`: `mkdir foo`
+- мы находимся в папке `foo/bar/`, создать папку `foo/baz`: `mkdir ../baz`
+
+Если необходимо создать последовательность директорий, стоит использовать команду `mkdir` с ключем `-p`:
+- мы находимся в папке в папке `foo/`, нам нужно создать директорию `foo/bar/baz/`. Используя команду без ключа -p нам пришлось бы выполнить две команды:
+
+1. `mkdir bar/` - создаём директорию `bar/`
+2. `mkdir bar/baz/` создаём директорию `baz/` в директории `bar/baz`
+
+Используя ключ `-p` достаточно выполнить одну:
+`mkdir -p bar/baz`
+
+:book: Подробней по команде `mkdir` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=nook+djvu&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=FV1ZWOLmJKW8zAWD3ZmYBw#newwindow=1&safe=off&channel=fs&q=linux+mkdir)
+
+<hr>
+
+### :balloon: Команда Echo
+
+Выводит в консоль (на самом деле в stdout, что это такое - читай ниже) переданный ей текст.
+`echo hello` выведет в консоль `hello`
+
+Важно помнить, что есть мы хотим вывести больше одного слова, стоит использовать ковычки:
+`echo "hello world\!"` выведет в консоль `hello world\!`
+
+(\ перед восклицательным знаком - так называемое экранирование)
+
+:book: Более полные примеры смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux%20echo&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=6j9YWOrzJpLHZLOMuaAE)
+
+<hr>
+
+### :barber: Стандартные потоки
+
+> :memo: В средах UNIX/Linux существует такое понятие, как стандартные потоки
+
+У каждой программы существует 3 потока данных:
+
+ - `stdin`
+ - `stdout`
+ - `stderr`
+ 
+ :book: Информацию о них можешь найти по этой [ссылке](https://habrahabr.ru/post/55136/)
+
+<hr>
+
+### :pencil2: Создание файлов (и наполнение их текстом) (Часть 2)
+
+Теперь, прочев про потоки данных мы можем сделать следующее: перенаправить поток `stdout` команды `echo` в новый файл:
+`echo "hello" > new_file.txt`
+
+Открыв файл, мы увидим текст `hello`
+Чтобы добавить к тексту `word`, выполним команду `echo "word" >> new_file.txt`. После выполнения этой команды содержимое файла станет 
+```
+hello
+world
+```
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+<time class='entry-date' datetime='2017-01-04T22:46:00+03:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>10:46 pm</span></time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://axazeano.github.io/linux-tutorials-for-beginers-part-1" data-via="" data-counturl="http://axazeano.github.io/linux-tutorials-for-beginers-part-1" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/01/05/linux-guide-for-beginers-part-2/">Гайд по Linux для начинающих. Часть 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/05/linux-guide-for-beginers-part-1/">Гайд по Linux для начинающих. Часть 1</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - axazeano -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

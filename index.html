@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Не блог</title>
+  <meta name="author" content="axazeano">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="Просмотр текстовых файлов Существует несколько утилит для просмотра текстовых файлов в консоли, такие как cat, less, и немного специфичные head, tail &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://axazeano.github.io/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Не блог" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -29,16 +29,15 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
   
 
 </head>
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Не блог</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>Some intresting things.</h2>
   
 </hgroup>
 
@@ -66,6 +65,108 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/01/05/linux-guide-for-beginers-part-2/">Гайд по Linux для начинающих. Часть 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2017-01-05T01:13:42+03:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>1:13 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>Просмотр текстовых файлов</h3>
+
+<p><img src="/images/user_images/read_files.png"></p>
+
+<p>Существует несколько утилит для просмотра текстовых файлов в консоли, такие как <code>cat</code>, <code>less</code>, и немного специфичные <code>head</code>, <code>tail</code>. Давай посмотрим на них подробнее:</p>
+
+<h4><code>less</code></h4>
+
+<p>Удобная утилита для просмотра текстовых файлов в консоли. Для базового использования достаточно набрать</p>
+
+<p><code>less my_text_document</code></p>
+
+<p><img src="/images/user_images/less_example.png"></p>
+
+<p>Документ отобразится на экране, его можно листать вверх/вниз/влево/вправо, искать слова.
+Утилита <code>less</code> позаимствовала команды у своей предшедственницы, утилиты <code>more</code>, которая выполняла схожие функции, но по сравнению с <code>less</code> имеет некоторые недостатки. Также, часть команд <code>less</code> взяла из утилиты <code>vi</code>, которая является очень продвинутым текстовым редактором.</p>
+
+<p>Для выхода из <code>less</code> достаточно нажать на клавишу <code>q</code>. Если не работает, скорее всего у вас включена русская раскладка клавиатуры.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2017/01/05/linux-guide-for-beginers-part-2/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/01/05/linux-guide-for-beginers-part-1/">Гайд по Linux для начинающих. Часть 1</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2017-01-05T00:22:04+03:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>12:22 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="[linux logo]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/280px-Tux.svg.png" title="[width] [height] [linux logo [linux logo]]" ></p>
+
+<p>Напишу немного о Linux.</p>
+
+<h3>Пути</h3>
+
+<blockquote><p>Путь - коротко говоря то, где расположен файл.</p></blockquote>
+
+<p>Представим, что у нас есть папка <code>foo/</code>, в которой есть другая папка <code>bar/</code>, в которой расположен файл <code>baz/</code>. Тогда путь для файла <code>baz/</code> будет выглядеть как <code>foo/bar/baz/</code></p>
+
+<p>В системах UNIX/Linux все пути начинаются из корневого раздела - <code>/</code>. Это не просто черточка, это указатель на вполне определённый раздел жесткого диска.</p>
+
+<p>Пути бывают двух типов: абсолютные и относительные пути.
+В чем же разница?</p>
+
+<p><strong>Абсолютный путь</strong> требует указания ПОЛНОГО перечня директорий до текущей директории. Например, нам нужна директория <code>log/</code>. Для того, чтобы получить доступ к этой директории, нам придётся записать полный её путь от корневого раздела: <code>/var/log</code>. Обрати внимание, что запись пути мы начали с <code>/</code> - корневого раздела, затем записали папку <code>var/</code>, в которой находится директорию <code>log/</code>.</p>
+
+<p><strong>Относительный путь</strong> более умный. Допустим, нам все также требуется получить доступ к файлу <code>log_file</code> в директории <code>/var/log/</code>, но сейчас мы находимся в директорию <code>var/</code>. Чтобы получить доступ к <code>log_file</code> нам достаточно указать путь <code>log/log_file</code>. Терминал знает то, в какой директорию ты сейчас находишься и достаточно указать путь, относительно текущей папки.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2017/01/05/linux-guide-for-beginers-part-1/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -77,6 +178,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/01/05/linux-guide-for-beginers-part-2/">Гайд по Linux для начинающих. Часть 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/05/linux-guide-for-beginers-part-1/">Гайд по Linux для начинающих. Часть 1</a>
+      </li>
     
   </ul>
 </section>
@@ -91,7 +200,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2017 - Your Name -
+  Copyright &copy; 2017 - axazeano -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
